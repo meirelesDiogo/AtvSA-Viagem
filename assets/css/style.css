@@ -1,0 +1,79 @@
+/*
+	assets/css/style.css
+	Estilos personalizados para o site Turistar.com
+	- Mantemos overrides leves para o Bootstrap
+	- Styling do hero, cards e responsividade
+*/
+
+:root{
+	--primary: #0d6efd;
+	--muted: #6c757d;
+	--accent: #ffc107; /* warning */
+}
+
+html,body{
+	height:100%;
+}
+
+/* HERO SLIDE */
+.hero-slide{
+	height:70vh;
+	min-height:420px;
+	background-size:cover;
+	background-position:center;
+	position:relative;
+	display:flex;
+	align-items:center;
+}
+
+.hero-overlay{
+	position:absolute;
+	inset:0;
+	background:linear-gradient(180deg, rgba(13,110,253,0.35), rgba(0,0,0,0.35));
+}
+
+.hero-text{
+	position:relative;
+	max-width:700px;
+}
+
+/* About section icons */
+.bi.display-6{font-size:2.4rem}
+
+/* Cards */
+.card-img-top{
+	height:200px;
+	object-fit:cover;
+}
+
+/* Fixed navbar spacer: make sure content not hidden behind fixed-top */
+body{
+	padding-top:72px; /* equal to navbar height */
+}
+
+/* Footer */
+footer a{opacity:0.9}
+footer a:hover{opacity:1}
+
+/* Small responsive adjustments */
+@media (max-width: 768px){
+	.hero-slide{height:60vh}
+	.card-img-top{height:180px}
+}
+
+@media (max-width: 420px){
+	.hero-text h1{font-size:1.4rem}
+	.hero-text p{font-size:0.95rem}
+}
+
+/* Accessibility focus state for buttons */
+.btn:focus{box-shadow:0 0 0 .25rem rgba(13,110,253,.25)}
+
+/* Small utility */
+.text-primary{color:var(--primary) !important}
+
+/* form alert visible helper */
+.alert-success{background-color: #d1e7dd; color:#0f5132}
+.alert-error{background-color: #f8d7da; color:#842029}
+
+/* Comments: keep CSS small and intentionally minimal to rely on Bootstrap's system */

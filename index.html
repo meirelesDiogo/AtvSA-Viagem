@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Turistar.com — Agência de Viagens</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="72" tabindex="0">
+
+  <!-- Navbar (fixed-top) -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="#">
+        <i class="bi bi-globe2 fs-3 me-2"></i>
+        <span class="fw-bold">Turistar<span class="text-warning">.com</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Alternar navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Pacotes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero (with carousel) -->
+  <header id="home" class="pt-5">
+    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');">
+            <div class="hero-overlay"></div>
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white hero-text">
+                <h1 class="display-5 fw-bold">Descubra o mundo com a Turistar.com</h1>
+                <p class="lead">Oferecemos pacotes personalizados para todos os gostos — sol, aventura e cultura.</p>
+                <a href="#packages" class="btn btn-warning btn-lg me-2">Ver Pacotes</a>
+                <a href="#contact" class="btn btn-outline-light btn-lg">Fale Conosco</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1600&q=60');">
+            <div class="hero-overlay"></div>
+            <div class="container h-100 d-flex align-items-center">
+              <div class="text-white hero-text">
+                <h1 class="display-5 fw-bold">Viagens seguras e com ótimo custo-benefício</h1>
+                <p class="lead">Equipe dedicada e suporte 24/7 para você viajar tranquilo.</p>
+                <a href="#packages" class="btn btn-warning btn-lg">Ver Pacotes</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Próximo</span>
+      </button>
+    </div>
+  </header>
+
+  <main class="mt-5">
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold">Nossa missão</h2>
+            <p class="lead">Na Turistar.com a nossa missão é conectar pessoas a experiências inesquecíveis. Planejamos viagens pensando em conforto, segurança e no melhor custo-benefício.</p>
+            <p>Com parceiros globais e atendimento personalizado, tornamos simples o que costuma ser complicado: escolher, reservar e viajar.</p>
+          </div>
+          <div class="col-lg-6">
+            <div class="row gy-3">
+              <div class="col-12 col-md-4 text-center">
+                <i class="bi bi-phone-vibrate display-6 text-primary"></i>
+                <h6 class="mt-2">Atendimento 24h</h6>
+                <p class="small text-muted">Suporte antes, durante e depois da viagem.</p>
+              </div>
+              <div class="col-12 col-md-4 text-center">
+                <i class="bi bi-tag display-6 text-primary"></i>
+                <h6 class="mt-2">Melhor preço</h6>
+                <p class="small text-muted">Negociamos tarifas exclusivas para você.</p>
+              </div>
+              <div class="col-12 col-md-4 text-center">
+                <i class="bi bi-person-check display-6 text-primary"></i>
+                <h6 class="mt-2">Personalização</h6>
+                <p class="small text-muted">Roteiros feitos sob medida conforme seu perfil.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pacotes / Serviços -->
+    <section id="packages" class="py-5 bg-light">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+          <h2 class="fw-bold">Nossos Pacotes</h2>
+          <p class="mb-0 text-muted">Escolha entre destinos nacionais e internacionais</p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1508261307772-7a8c0b48c6c9?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Praia tropical">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Praias Tropicais</h5>
+                <p class="card-text text-muted">7 dias em praias deslumbrantes com hospedagem e passeios inclusos.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">R$ 2.499</span>
+                  <div>
+                    <button class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modal1">Saiba Mais</button>
+                    <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1505765050060-2677f4d4f7d5?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Cidade europeia">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Cidades Europeias</h5>
+                <p class="card-text text-muted">Pacote cultural com passagens, city tours e hospedagem de 10 dias.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">US$ 1.799</span>
+                  <div>
+                    <button class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modal2">Saiba Mais</button>
+                    <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="card h-100 shadow-sm">
+              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Montanhas">
+              <div class="card-body d-flex flex-column">
+                <h5 class="card-title">Aventura nas Montanhas</h5>
+                <p class="card-text text-muted">Trilhas, guias e hospedagem em eco-lodges — ideal para aventureiros.</p>
+                <div class="mt-auto d-flex justify-content-between align-items-center">
+                  <span class="fw-bold text-primary">R$ 1.999</span>
+                  <div>
+                    <button class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modal3">Saiba Mais</button>
+                    <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4">
+            <h2 class="fw-bold">Fale Conosco</h2>
+            <p class="text-muted">Preencha o formulário e nossa equipe retornará em até 24 horas.</p>
+            <ul class="list-unstyled small">
+              <li><i class="bi bi-geo-alt-fill me-2"></i>Av. Exemplo, 123 — Centro, Cidade</li>
+              <li><i class="bi bi-telephone-fill me-2"></i>(11) 99999-9999</li>
+              <li><i class="bi bi-envelope-fill me-2"></i>contato@turistar.com</li>
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <form id="contactForm" novalidate>
+              <div class="mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="name" required minlength="2">
+                <div class="invalid-feedback">Por favor, insira seu nome.</div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+                <div class="invalid-feedback">Insira um e-mail válido.</div>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Mensagem</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                <div class="invalid-feedback">A mensagem não pode ficar vazia.</div>
+              </div>
+              <div class="d-grid">
+                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+              </div>
+              <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <div class="mb-3 mb-md-0 text-center text-md-start">
+        <strong>Turistar.com</strong>
+        <div class="small">&copy; <span id="year"></span> Turistar. Todos os direitos reservados.</div>
+      </div>
+      <div>
+        <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modals for packages -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal1Label">Praias Tropicais — Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Inclui 7 noites em resort all-inclusive, transfer, passeios e seguro viagem. Ideal para família e casais.</p>
+          <ul>
+            <li>Hospedagem 4 estrelas</li>
+            <li>Passeios locais inclusos</li>
+            <li>Parcelamento em até 6x</li>
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="#contact" class="btn btn-primary">Reservar este pacote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal2Label">Cidades Europeias — Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Pacote de 10 dias incluindo passagens, city tours guiados, hotéis centrais e café da manhã.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="#contact" class="btn btn-primary">Reservar este pacote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal3Label">Aventura nas Montanhas — Detalhes</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Programação de 6 dias com guias, trilhas, equipamentos básicos e hospedagem em eco-lodge.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="#contact" class="btn btn-primary">Reservar este pacote</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
