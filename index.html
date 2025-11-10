@@ -4,16 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Turistar.com — Agência de Viagens</title>
-  <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS - -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <!-- Bootstrap Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-  <!-- Custom styles -->
+  
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body data-bs-spy="scroll" data-bs-target="#mainNavbar" data-bs-offset="72" tabindex="0">
 
-  <!-- Navbar (fixed-top) -->
+  <!-- NAVBAR-->
   <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="#">
@@ -26,34 +26,35 @@
 
       <div class="collapse navbar-collapse" id="navCollapse">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre</a></li>
-          <li class="nav-item"><a class="nav-link" href="#packages">Pacotes</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contato</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/html/sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/html/servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/html/contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="assets/html/reserva.html">Reservar</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Hero (with carousel) -->
+  <!-- SEÇÃO PRINCIPAL COM CAROUSEL-->
   <header id="home" class="pt-5">
     <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');">
+          <div class="hero-slide hero-slide-beach">
             <div class="hero-overlay"></div>
             <div class="container h-100 d-flex align-items-center">
               <div class="text-white hero-text">
                 <h1 class="display-5 fw-bold">Descubra o mundo com a Turistar.com</h1>
                 <p class="lead">Oferecemos pacotes personalizados para todos os gostos — sol, aventura e cultura.</p>
                 <a href="#packages" class="btn btn-warning btn-lg me-2">Ver Pacotes</a>
-                <a href="#contact" class="btn btn-outline-light btn-lg">Fale Conosco</a>
+                <a href="assets/html/contato.html" class="btn btn-outline-light btn-lg">Fale Conosco</a>
               </div>
             </div>
           </div>
         </div>
         <div class="carousel-item">
-          <div class="hero-slide" style="background-image: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1600&q=60');">
+          <div class="hero-slide hero-slide-adventure">
             <div class="hero-overlay"></div>
             <div class="container h-100 d-flex align-items-center">
               <div class="text-white hero-text">
@@ -76,95 +77,82 @@
     </div>
   </header>
 
-  <main class="mt-5">
-    <section id="about" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <h2 class="fw-bold">Nossa missão</h2>
-            <p class="lead">Na Turistar.com a nossa missão é conectar pessoas a experiências inesquecíveis. Planejamos viagens pensando em conforto, segurança e no melhor custo-benefício.</p>
-            <p>Com parceiros globais e atendimento personalizado, tornamos simples o que costuma ser complicado: escolher, reservar e viajar.</p>
-          </div>
-          <div class="col-lg-6">
-            <div class="row gy-3">
-              <div class="col-12 col-md-4 text-center">
-                <i class="bi bi-phone-vibrate display-6 text-primary"></i>
-                <h6 class="mt-2">Atendimento 24h</h6>
-                <p class="small text-muted">Suporte antes, durante e depois da viagem.</p>
-              </div>
-              <div class="col-12 col-md-4 text-center">
-                <i class="bi bi-tag display-6 text-primary"></i>
-                <h6 class="mt-2">Melhor preço</h6>
-                <p class="small text-muted">Negociamos tarifas exclusivas para você.</p>
-              </div>
-              <div class="col-12 col-md-4 text-center">
-                <i class="bi bi-person-check display-6 text-primary"></i>
-                <h6 class="mt-2">Personalização</h6>
-                <p class="small text-muted">Roteiros feitos sob medida conforme seu perfil.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Pacotes / Serviços -->
-    <section id="packages" class="py-5 bg-light">
+  <main>
+    <!-- PACOTES EM DESTAQUE-->
+    <section id="packages" class="py-5 bg-light mt-5">
       <div class="container">
         <div class="d-flex justify-content-between align-items-center mb-4">
-          <h2 class="fw-bold">Nossos Pacotes</h2>
+          <h2 class="fw-bold">Pacotes em Destaque</h2>
           <p class="mb-0 text-muted">Escolha entre destinos nacionais e internacionais</p>
         </div>
 
         <div class="row g-4">
-          <!-- Card 1 -->
+          <!-- Card Ásia -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1508261307772-7a8c0b48c6c9?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Praia tropical">
+            <div class="card h-100 shadow-sm card-premium position-relative">
+              <div class="position-absolute top-0 end-0 m-3">
+                <span class="badge bg-danger">⭐ BESTSELLER</span>
+              </div>
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e" class="card-img-top" alt="Japão">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Praias Tropicais</h5>
-                <p class="card-text text-muted">7 dias em praias deslumbrantes com hospedagem e passeios inclusos.</p>
+                <h5 class="card-title">Japão Cultural</h5>
+                <p class="card-text text-muted">12 dias explorando Tokyo, Kyoto e Osaka. Templos, jardins e gastronomia.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark">12 dias</span>
+                  <span class="badge bg-light text-dark">5 Estrelas</span>
+                </div>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <span class="fw-bold text-primary">R$ 2.499</span>
+                  <span class="fw-bold text-primary">R$ 8.250,00</span>
                   <div>
                     <button class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modal1">Saiba Mais</button>
-                    <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+                    <a href="assets/html/reserva.html#asia" class="btn btn-primary btn-sm">Reservar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Card 2 -->
+          <!-- Card África -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1505765050060-2677f4d4f7d5?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Cidade europeia">
+            <div class="card h-100 shadow-sm card-premium position-relative">
+              <div class="position-absolute top-0 end-0 m-3">
+                <span class="badge bg-warning">🔥 PREMIUM</span>
+              </div>
+              <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" class="card-img-top" alt="Safari">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Cidades Europeias</h5>
-                <p class="card-text text-muted">Pacote cultural com passagens, city tours e hospedagem de 10 dias.</p>
+                <h5 class="card-title">Safari na Tanzânia</h5>
+                <p class="card-text text-muted">8 dias no Serengeti e Ngorongoro. Safari fotográfico e lodge de luxo.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark">8 dias</span>
+                  <span class="badge bg-light text-dark">5 Estrelas</span>
+                </div>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <span class="fw-bold text-primary">US$ 1.799</span>
+                                    <span class="fw-bold text-primary">R$ 13.250,00</span>
                   <div>
                     <button class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modal2">Saiba Mais</button>
-                    <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+                    <a href="assets/html/reserva.html#africa" class="btn btn-primary btn-sm">Reservar</a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- Card 3 -->
+          <!-- Card Oceania -->
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="card h-100 shadow-sm">
-              <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=60" class="card-img-top" alt="Montanhas">
+            <div class="card h-100 shadow-sm card-premium">
+              <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9" class="card-img-top" alt="Sydney">
               <div class="card-body d-flex flex-column">
-                <h5 class="card-title">Aventura nas Montanhas</h5>
-                <p class="card-text text-muted">Trilhas, guias e hospedagem em eco-lodges — ideal para aventureiros.</p>
+                <h5 class="card-title">Austrália Espetacular</h5>
+                <p class="card-text text-muted">14 dias: Sydney, Melbourne e Grande Barreira de Coral.</p>
+                <div class="mb-3">
+                  <span class="badge bg-light text-dark">14 dias</span>
+                  <span class="badge bg-light text-dark">5 Estrelas</span>
+                </div>
                 <div class="mt-auto d-flex justify-content-between align-items-center">
-                  <span class="fw-bold text-primary">R$ 1.999</span>
+                  <span class="fw-bold text-primary">R$ 11.300,00</span>
                   <div>
                     <button class="btn btn-outline-primary btn-sm me-2" data-bs-toggle="modal" data-bs-target="#modal3">Saiba Mais</button>
-                    <a href="#contact" class="btn btn-primary btn-sm">Reservar</a>
+                    <a href="assets/html/reserva.html#oceania" class="btn btn-primary btn-sm">Reservar</a>
                   </div>
                 </div>
               </div>
@@ -175,40 +163,311 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
+    <!-- ESTATÍSTICAS -->
+    <section class="py-5 bg-primary text-white">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-6 mb-4">
-            <h2 class="fw-bold">Fale Conosco</h2>
-            <p class="text-muted">Preencha o formulário e nossa equipe retornará em até 24 horas.</p>
-            <ul class="list-unstyled small">
-              <li><i class="bi bi-geo-alt-fill me-2"></i>Av. Exemplo, 123 — Centro, Cidade</li>
-              <li><i class="bi bi-telephone-fill me-2"></i>(11) 99999-9999</li>
-              <li><i class="bi bi-envelope-fill me-2"></i>contato@turistar.com</li>
-            </ul>
+        <h2 class="text-center mb-5 fw-bold">Números que Comprovam Nossa Excelência</h2>
+        <div class="row g-4 text-center">
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-3">
+              <h3 class="stat-number" data-target="50000">0</h3>
+              <p class="fs-5">+ Clientes Felizes</p>
+              <p class="text-light opacity-75 small">Viajantes satisfeitos anualmente</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-3">
+              <h3 class="stat-number" data-target="150">0</h3>
+              <p class="fs-5">+ Destinos</p>
+              <p class="text-light opacity-75 small">Ao redor do mundo</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-3">
+              <h3 class="stat-number" data-target="15">0</h3>
+              <p class="fs-5">+ Anos de Experiência</p>
+              <p class="text-light opacity-75 small">Servindo com dedicação</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="mb-3">
+              <h3 class="stat-number" data-target="98">0</h3>
+              <p class="fs-5">% Satisfação</p>
+              <p class="text-light opacity-75 small">Taxa de recomendação</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DICAS E GUIAS DE VIAGEM
+          -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Dicas e Guias de Viagem</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 card-premium">
+              <div class="card-header bg-transparent border-bottom border-light-subtle">
+                <span class="badge badge-premium mb-2">✈️ Dica</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Documentos Essenciais para Viajar</h5>
+                <p class="card-text text-muted">Confira a lista completa de documentos necessários para viajar para diferentes destinos internacionais.</p>
+                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#dicaModal1">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 card-premium">
+              <div class="card-header bg-transparent border-bottom border-light-subtle">
+                <span class="badge badge-premium mb-2">🏖️ Guia</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Melhores Épocas para Viajar</h5>
+                <p class="card-text text-muted">Descubra quando visitar seus destinos favoritos para aproveitar o melhor clima e evitar multidões.</p>
+                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#dicaModal2">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 card-premium">
+              <div class="card-header bg-transparent border-bottom border-light-subtle">
+                <span class="badge badge-premium mb-2">💰 Economia</span>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Viajando com Orçamento Limitado</h5>
+                <p class="card-text text-muted">Dicas práticas para economizar em passagens, hospedagem e alimentação sem abrir mão da qualidade.</p>
+                <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#dicaModal3">Saiba Mais</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  SEÇÃO DE DESTAQUES  -->
+    <section class="py-5">
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-shield-check text-success" style="font-size: 2rem;"></i>
+              </div>
+              <h5>Viagens Seguras</h5>
+              <p class="text-muted small">Parcerias com as melhores agências e hotéis do mundo</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-telephone text-info" style="font-size: 2rem;"></i>
+              </div>
+              <h5>Suporte 24/7</h5>
+              <p class="text-muted small">Equipe disponível em português para ajudar</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-credit-card text-warning" style="font-size: 2rem;"></i>
+              </div>
+              <h5>Melhor Preço</h5>
+              <p class="text-muted small">Comparamos com outras agências para garantir o melhor custo-benefício</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="text-center">
+              <div class="feature-icon mb-3">
+                <i class="bi bi-star text-danger" style="font-size: 2rem;"></i>
+              </div>
+              <h5>Experiências Únicas</h5>
+              <p class="text-muted small">Pacotes personalizados para cada tipo de viajante</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+         DEPOIMENTOS DE CLIENTES -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Depoimentos de Clientes</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="card-text">"Melhor viagem da minha vida! A Turistar cuidou de todos os detalhes. Voltarei com certeza!"</p>
+                <p class="mb-0"><strong>Maria Silva</strong> - São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="card-text">"Preços imbatíveis e um atendimento impecável. Recomendo para todos os meus amigos!"</p>
+                <p class="mb-0"><strong>João Santos</strong> - Rio de Janeiro, RJ</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <div class="d-flex mb-3">
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                  <i class="bi bi-star-fill text-warning"></i>
+                </div>
+                <p class="card-text">"Consegui viajar para fora do Brasil pela primeira vez! Muito obrigada pela ajuda."</p>
+                <p class="mb-0"><strong>Ana Costa</strong> - Belo Horizonte, MG</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+         CATEGORIAS DE VIAGEM
+        -->
+    <section class="py-5">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Categorias de Viagem</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-heart-fill text-danger" style="font-size: 2.5rem;"></i>
+                <h5 class="mt-3">Lua de Mel</h5>
+                <p class="text-muted small">Pacotes românticos em destinos paradisíacos</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-people-fill text-info" style="font-size: 2.5rem;"></i>
+                <h5 class="mt-3">Família</h5>
+                <p class="text-muted small">Diversão e segurança para toda a família</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-bicycle text-success" style="font-size: 2.5rem;"></i>
+                <h5 class="mt-3">Aventura</h5>
+                <p class="text-muted small">Trilhas, esportes e experiências radicais</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100 text-center border-0 shadow-sm">
+              <div class="card-body">
+                <i class="bi bi-book-fill text-primary" style="font-size: 2.5rem;"></i>
+                <h5 class="mt-3">Cultural</h5>
+                <p class="text-muted small">Museus, patrimônio histórico e tradições locais</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+         PRÓXIMOS DESTINOS CONFIRMADOS
+          -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center mb-5 fw-bold">Próximos Destinos Confirmados</h2>
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🗼 Paris - França</h5>
+                <p class="text-muted mb-2"><i class="bi bi-calendar"></i> 15 a 22 de Dezembro</p>
+                <p class="card-text">Tour pela Cidade da Luz com visitas ao Louvre, Torre Eiffel e Versalhes</p>
+                <div class="d-flex justify-content-between">
+                  <span class="text-primary fw-bold">R$ 5.800,00</span>
+                  <button class="btn btn-sm btn-outline-primary">Mais Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🏖️ Maldivas</h5>
+                <p class="text-muted mb-2"><i class="bi bi-calendar"></i> 20 a 27 de Janeiro</p>
+                <p class="card-text">Mergulho, snorkel e resort de luxo em água cristalina</p>
+                <div class="d-flex justify-content-between">
+                  <span class="text-primary fw-bold">R$ 9.200,00</span>
+                  <button class="btn btn-sm btn-outline-primary">Mais Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🏔️ Machu Picchu - Peru</h5>
+                <p class="text-muted mb-2"><i class="bi bi-calendar"></i> 5 a 12 de Fevereiro</p>
+                <p class="card-text">Trekking, ruínas incas e experiência autêntica na Cordilheira dos Andes</p>
+                <div class="d-flex justify-content-between">
+                  <span class="text-primary fw-bold">R$ 6.500,00</span>
+                  <button class="btn btn-sm btn-outline-primary">Mais Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card h-100 border-0 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🏛️ Roma - Itália</h5>
+                <p class="text-muted mb-2"><i class="bi bi-calendar"></i> 1 a 8 de Março</p>
+                <p class="card-text">Coliseu, Vaticano, Fontana di Trevi e gastronomia italiana</p>
+                <div class="d-flex justify-content-between">
+                  <span class="text-primary fw-bold">R$ 5.500,00</span>
+                  <button class="btn btn-sm btn-outline-primary">Mais Info</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+         NEWSLETTER - INSCRIÇÃO POR E-MAIL
+         -->
+    <section class="py-5 bg-primary text-white">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="fw-bold mb-3">Receba as Melhores Ofertas</h2>
+            <p class="lead">Inscreva-se na nossa newsletter e receba promoções exclusivas diretamente no seu e-mail!</p>
           </div>
           <div class="col-lg-6">
-            <form id="contactForm" novalidate>
-              <div class="mb-3">
-                <label for="name" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="name" name="name" required minlength="2">
-                <div class="invalid-feedback">Por favor, insira seu nome.</div>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">E-mail</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-                <div class="invalid-feedback">Insira um e-mail válido.</div>
-              </div>
-              <div class="mb-3">
-                <label for="message" class="form-label">Mensagem</label>
-                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
-                <div class="invalid-feedback">A mensagem não pode ficar vazia.</div>
-              </div>
-              <div class="d-grid">
-                <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
-              </div>
-              <div id="formAlert" class="alert mt-3 d-none" role="alert"></div>
+            <form id="newsletterForm" class="d-flex flex-column flex-sm-row gap-2">
+              <input type="email" class="form-control form-control-lg" placeholder="Seu e-mail..." required>
+              <button type="submit" class="btn btn-warning btn-lg">Inscrever</button>
             </form>
           </div>
         </div>
@@ -231,69 +490,288 @@
     </div>
   </footer>
 
-  <!-- Modals for packages -->
+  <!-- 
+       MODAIS DOS PACOTES PRINCIPAIS-->
+
+  <!-- Modal Japão Cultural -->
   <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal1Label">Praias Tropicais — Detalhes</h5>
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="modal1Label"><i class="bi bi-geo-alt text-primary me-2"></i>Japão Cultural</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Inclui 7 noites em resort all-inclusive, transfer, passeios e seguro viagem. Ideal para família e casais.</p>
-          <ul>
-            <li>Hospedagem 4 estrelas</li>
-            <li>Passeios locais inclusos</li>
-            <li>Parcelamento em até 6x</li>
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e" class="img-fluid rounded mb-4" alt="Japão">
+          
+          <h6 class="fw-bold text-primary mb-3">📍 Localização</h6>
+          <p class="mb-4">Tokyo, Kyoto e Osaka - Japão. Explore templos milenares, jardins zen, tecnologia de ponta e gastronomia excepcional.</p>
+
+          <h6 class="fw-bold text-primary mb-3">✨ O Que Você Pode Fazer</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Visitar o Templo Fushimi Inari com mil portais vermelhos</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Assistir a cerimônia tradicional do chá</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Passeio noturno pelos neons de Shibuya</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Desfrute culinária autêntica em restaurantes tradicionais</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Banho em onsen (fonte termal natural)</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Mercado de peixes de Tsukiji</li>
           </ul>
+
+          <div class="mt-4 p-3 bg-light rounded">
+            <h6 class="fw-bold mb-2">📦 Incluso no Pacote</h6>
+            <ul class="list-unstyled small">
+              <li><i class="bi bi-check me-2 text-primary"></i>Passagens aéreas internacionais</li>
+              <li><i class="bi bi-check me-2 text-primary"></i>12 noites em hotéis 5 estrelas</li>
+              <li><i class="bi bi-check me-2 text-primary"></i>Café da manhã diário</li>
+              <li><i class="bi bi-check me-2 text-primary"></i>Tours guiados em português</li>
+              <li><i class="bi bi-check me-2 text-primary"></i>Seguro viagem internacional</li>
+              <li><i class="bi bi-check me-2 text-primary"></i>JR Pass (transporte entre cidades)</li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <a href="#contact" class="btn btn-primary">Reservar este pacote</a>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="assets/html/reserva.html#asia" class="btn btn-primary"><i class="bi bi-calendar-check me-2"></i>Reservar - R$ 8.250,00</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Modal Safari na Tanzânia -->
   <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal2Label">Cidades Europeias — Detalhes</h5>
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="modal2Label"><i class="bi bi-geo-alt text-danger me-2"></i>Safari na Tanzânia</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Pacote de 10 dias incluindo passagens, city tours guiados, hotéis centrais e café da manhã.</p>
+          <img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5" class="img-fluid rounded mb-4" alt="Safari">
+          
+          <h6 class="fw-bold text-danger mb-3">📍 Localização</h6>
+          <p class="mb-4">Serengeti e Ngorongoro - Tanzânia. Witness a maior migração de animais selvagens do planeta em seu habitat natural.</p>
+
+          <h6 class="fw-bold text-danger mb-3">✨ O Que Você Pode Fazer</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Game drives no Parque Nacional do Serengeti</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Observar leões, elefantes, girafas e leopardos</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Visita ao Cratera de Ngorongoro</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Encontro com a etnia Maasai</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Fotografia de vida selvagem profissional</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Pôr do sol africano inesquecível</li>
+          </ul>
+
+          <div class="mt-4 p-3 bg-light rounded">
+            <h6 class="fw-bold mb-2">📦 Incluso no Pacote</h6>
+            <ul class="list-unstyled small">
+              <li><i class="bi bi-check me-2 text-danger"></i>Passagens aéreas internacionais</li>
+              <li><i class="bi bi-check me-2 text-danger"></i>8 noites em lodge de luxo</li>
+              <li><i class="bi bi-check me-2 text-danger"></i>Todas as refeições incluídas</li>
+              <li><i class="bi bi-check me-2 text-danger"></i>Game drives com guide experiente</li>
+              <li><i class="bi bi-check me-2 text-danger"></i>Seguro viagem e vacinas consultadas</li>
+              <li><i class="bi bi-check me-2 text-danger"></i>Binoculares e guia fotográfico</li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <a href="#contact" class="btn btn-primary">Reservar este pacote</a>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="assets/html/reserva.html#africa" class="btn btn-danger"><i class="bi bi-calendar-check me-2"></i>Reservar - R$ 13.250,00</a>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Modal Austrália Espetacular -->
   <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
     <div class="modal-dialog modal-lg modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modal3Label">Aventura nas Montanhas — Detalhes</h5>
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="modal3Label"><i class="bi bi-geo-alt text-info me-2"></i>Austrália Espetacular</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Programação de 6 dias com guias, trilhas, equipamentos básicos e hospedagem em eco-lodge.</p>
+          <img src="https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9" class="img-fluid rounded mb-4" alt="Austrália">
+          
+          <h6 class="fw-bold text-info mb-3">📍 Localização</h6>
+          <p class="mb-4">Sydney, Melbourne e Grande Barreira de Coral - Austrália. Descubra um país de paisagens deslumbrantes e aventuras únicas.</p>
+
+          <h6 class="fw-bold text-info mb-3">✨ O Que Você Pode Fazer</h6>
+          <ul class="list-unstyled">
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Visitar a icônica Ópera House de Sydney</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Mergulho e snorkel na Grande Barreira de Coral</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Explorar as praias e trilhas de Melbourne</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Encontro com coalas e cangurus na selva</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Aproveitar a gastronomia multicultural australiana</li>
+            <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Passeios de barco pelo Harbour de Sydney</li>
+          </ul>
+
+          <div class="mt-4 p-3 bg-light rounded">
+            <h6 class="fw-bold mb-2">📦 Incluso no Pacote</h6>
+            <ul class="list-unstyled small">
+              <li><i class="bi bi-check me-2 text-info"></i>Passagens aéreas internacionais</li>
+              <li><i class="bi bi-check me-2 text-info"></i>14 noites em hotéis 5 estrelas</li>
+              <li><i class="bi bi-check me-2 text-info"></i>Café da manhã diário</li>
+              <li><i class="bi bi-check me-2 text-info"></i>Tours e passeios guiados</li>
+              <li><i class="bi bi-check me-2 text-info"></i>Acesso à Grande Barreira de Coral</li>
+              <li><i class="bi bi-check me-2 text-info"></i>Seguro viagem completo</li>
+            </ul>
+          </div>
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-          <a href="#contact" class="btn btn-primary">Reservar este pacote</a>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+          <a href="assets/html/reserva.html#oceania" class="btn btn-info text-white"><i class="bi bi-calendar-check me-2"></i>Reservar - R$ 11.300,00</a>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Bootstrap JS -->
+  <!-- Modais das Dicas de Viagem -->
+  <!-- Modal Dica 1: Documentos Essenciais -->
+  <div class="modal fade" id="dicaModal1" tabindex="-1" aria-labelledby="dicaModal1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="dicaModal1Label"><i class="bi bi-passport text-primary me-2"></i>Documentos Essenciais para Viajar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="fw-bold text-primary mb-3">📋 Documentação Completa</h6>
+          
+          <div class="mb-4">
+            <h6 class="fw-bold">Para Viagens Internacionais</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Passaporte válido (validade mínima de 6 meses)</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Visto (dependendo do país de destino)</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Passagens aéreas impressas ou digitais</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Reserva do hotel confirmada</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Seguro viagem válido</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Certificado de vacinação (se necessário)</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">Para Viagens Nacionais</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>RG ou CNH válidos</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Passagens impressas ou e-ticket</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Comprovante de endereço (opcional)</li>
+            </ul>
+          </div>
+
+          <div class="alert alert-info">
+            <i class="bi bi-info-circle me-2"></i>
+            <strong>Dica:</strong> Sempre faça cópias de seus documentos importantes e guarde em local seguro, separado dos originais.
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Dica 2: Melhores Épocas -->
+  <div class="modal fade" id="dicaModal2" tabindex="-1" aria-labelledby="dicaModal2Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="dicaModal2Label"><i class="bi bi-calendar-event text-info me-2"></i>Melhores Épocas para Viajar</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="fw-bold text-info mb-3">🌍 Calendário de Viagens Ideais</h6>
+          
+          <div class="mb-4">
+            <h6 class="fw-bold">🏖️ Praias e Resorts Tropicais</h6>
+            <p><strong>Melhor época:</strong> Junho a Setembro (inverno)</p>
+            <p class="text-muted">Clima seco, menos chuvas e multidões controladas. Preços mais acessíveis.</p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">🏔️ Destinos de Montanha e Trilhas</h6>
+            <p><strong>Melhor época:</strong> Abril a Junho e Setembro a Outubro</p>
+            <p class="text-muted">Clima ameno, melhor visibilidade e menor risco de deslizamentos.</p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">❄️ Destinos para Neve</h6>
+            <p><strong>Melhor época:</strong> Dezembro a Março (verão do hemisfério sul)</p>
+            <p class="text-muted">Neve garantida, mas prepare-se para temperaturas bem baixas.</p>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">🏛️ Cidades Históricas e Culturais</h6>
+            <p><strong>Melhor época:</strong> Abril a Junho e Setembro a Outubro</p>
+            <p class="text-muted">Clima agradável, melhor para explorar a pé sem extremos de temperatura.</p>
+          </div>
+
+          <div class="alert alert-warning">
+            <i class="bi bi-exclamation-triangle me-2"></i>
+            <strong>Evite:</strong> Evite períodos de férias escolares e feriados prolongados para encontrar preços melhores e menos aglomeração.
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal Dica 3: Viajando com Orçamento Limitado -->
+  <div class="modal fade" id="dicaModal3" tabindex="-1" aria-labelledby="dicaModal3Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header border-bottom">
+          <h5 class="modal-title" id="dicaModal3Label"><i class="bi bi-piggy-bank text-success me-2"></i>Viajando com Orçamento Limitado</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <h6 class="fw-bold text-success mb-3">💰 Dicas para Economizar</h6>
+          
+          <div class="mb-4">
+            <h6 class="fw-bold">✈️ Passagens Aéreas</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Compre com antecedência (2-3 meses antes)</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Viaje em terça, quarta ou quinta-feira</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Considere voos com conexões (mais baratos)</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Inscreva-se em newsletters de promoções</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">🏨 Hospedagem</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Use plataformas de hospedagem compartilhada</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Procure hostels em vez de hotéis</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Negocie diárias para longas permanências</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Fique fora do centro, em bairros menos turísticos</li>
+            </ul>
+          </div>
+
+          <div class="mb-4">
+            <h6 class="fw-bold">🍽️ Alimentação</h6>
+            <ul class="list-unstyled">
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Coma onde os locais comem, não em restaurantes turísticos</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Procure supermercados para pequenas refeições</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Almoço é geralmente mais barato que jantar</li>
+              <li class="mb-2"><i class="bi bi-check-circle text-success me-2"></i>Aproveite street food e comida de rua</li>
+            </ul>
+          </div>
+
+          <div class="alert alert-success">
+            <i class="bi bi-star-fill me-2"></i>
+            <strong>Bônus:</strong> Muitos museus e atrações oferecem entrada gratuita em dias específicos. Pesquise com antecedência!
+          </div>
+        </div>
+        <div class="modal-footer border-top">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Fechar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Custom JS -->
+  
   <script src="assets/js/script.js"></script>
 </body>
 </html>

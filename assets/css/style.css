@@ -15,7 +15,7 @@ html,body{
 	height:100%;
 }
 
-/* HERO SLIDE */
+/* SEÇÃO HERO */
 .hero-slide{
 	height:70vh;
 	min-height:420px;
@@ -24,6 +24,14 @@ html,body{
 	position:relative;
 	display:flex;
 	align-items:center;
+}
+
+.hero-slide-beach {
+	background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=60');
+}
+
+.hero-slide-adventure {
+	background-image: url('https://images.unsplash.com/photo-1493558103817-58b2924bce98?auto=format&fit=crop&w=1600&q=60');
 }
 
 .hero-overlay{
@@ -37,7 +45,7 @@ html,body{
 	max-width:700px;
 }
 
-/* About section icons */
+/* Ícones da seção sobre */
 .bi.display-6{font-size:2.4rem}
 
 /* Cards */
@@ -46,16 +54,16 @@ html,body{
 	object-fit:cover;
 }
 
-/* Fixed navbar spacer: make sure content not hidden behind fixed-top */
+/* Espaçador navbar fixa: certifique-se de que o conteúdo não fica oculto atrás de fixed-top */
 body{
-	padding-top:72px; /* equal to navbar height */
+	padding-top:72px; /* igual à altura da navbar */
 }
 
-/* Footer */
+/* Rodapé */
 footer a{opacity:0.9}
 footer a:hover{opacity:1}
 
-/* Small responsive adjustments */
+/* Pequenos ajustes responsivos */
 @media (max-width: 768px){
 	.hero-slide{height:60vh}
 	.card-img-top{height:180px}
@@ -66,14 +74,274 @@ footer a:hover{opacity:1}
 	.hero-text p{font-size:0.95rem}
 }
 
-/* Accessibility focus state for buttons */
+/* Estado de foco acessível para botões */
 .btn:focus{box-shadow:0 0 0 .25rem rgba(13,110,253,.25)}
 
-/* Small utility */
+/* Pequeno utilitário */
 .text-primary{color:var(--primary) !important}
 
-/* form alert visible helper */
+/* Helper de alerta de formulário visível */
 .alert-success{background-color: #d1e7dd; color:#0f5132}
 .alert-error{background-color: #f8d7da; color:#842029}
 
-/* Comments: keep CSS small and intentionally minimal to rely on Bootstrap's system */
+/* Estilo iframe do mapa */
+.map-iframe {
+	border: 0;
+}
+
+/* Estilo do formulário de contato */
+.contact-form {
+	background-color: #f8f9fa;
+	border-left: 4px solid var(--primary);
+}
+
+.feature-icon {
+	width: 48px;
+	height: 48px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #e7f1ff;
+	border-radius: 8px;
+	flex-shrink: 0;
+}
+
+.reservation-sidebar {
+	top: 100px;
+}
+
+/* Animações e transições */
+@keyframes fadeInUp {
+	from {
+		opacity: 0;
+		transform: translateY(30px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes slideInLeft {
+	from {
+		opacity: 0;
+		transform: translateX(-50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
+@keyframes countUp {
+	from {
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes pulse {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0.7;
+	}
+}
+
+@keyframes glow {
+	0%, 100% {
+		box-shadow: 0 0 5px rgba(13, 110, 253, 0.3);
+	}
+	50% {
+		box-shadow: 0 0 20px rgba(13, 110, 253, 0.6);
+	}
+}
+
+/* Cards com transições suaves */
+.card {
+	transition: all 0.3s ease;
+	border: none;
+	overflow: hidden;
+	animation: fadeInUp 0.6s ease;
+}
+
+.card:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+	transition: transform 0.3s ease;
+}
+
+.card:hover .card-img-top {
+	transform: scale(1.05);
+}
+
+/* Efeitos de botão */
+.btn {
+	transition: all 0.3s ease;
+	position: relative;
+	overflow: hidden;
+}
+
+.btn:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.btn:active {
+	transform: translateY(0);
+}
+
+/* Animações de seção */
+section {
+	animation: fadeInUp 0.7s ease;
+}
+
+/* Melhoria da navbar */
+.navbar {
+	transition: all 0.3s ease;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+	transition: color 0.3s ease;
+	position: relative;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+	color: var(--accent) !important;
+}
+
+.navbar-dark .navbar-nav .nav-link::after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 2px;
+	bottom: -5px;
+	left: 50%;
+	background-color: var(--accent);
+	transition: all 0.3s ease;
+	transform: translateX(-50%);
+}
+
+.navbar-dark .navbar-nav .nav-link:hover::after {
+	width: 100%;
+}
+
+/* Animação de contagem de estatísticas */
+.stat-number {
+	font-size: 2.5rem;
+	font-weight: bold;
+	color: white;
+	animation: countUp 1s ease;
+}
+
+/* Estilo de badge */
+.badge-premium {
+	background: linear-gradient(135deg, #ff6b6b, #ff8e53);
+	padding: 0.5rem 1rem;
+	border-radius: 20px;
+	font-weight: 600;
+	font-size: 0.8rem;
+	display: inline-block;
+	animation: pulse 2s infinite;
+}
+
+/* Melhoria da seção hero */
+.hero-slide {
+	position: relative;
+}
+
+.hero-slide::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	background: linear-gradient(to right, rgba(0,0,0,0.3), transparent);
+	z-index: 1;
+}
+
+.hero-text {
+	z-index: 2;
+	animation: slideInLeft 0.8s ease;
+}
+
+/* Inputs de formulário */
+.form-control, .form-select {
+	transition: all 0.3s ease;
+	border-color: #e0e0e0;
+}
+
+.form-control:focus, .form-select:focus {
+	border-color: var(--primary);
+	box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.15);
+	transform: translateY(-2px);
+}
+
+/* Texto com gradiente */
+.text-gradient {
+	background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	font-weight: 700;
+}
+
+/* Scroll suave */
+html {
+	scroll-behavior: smooth;
+}
+
+/* Ícones de feature com background */
+.feature-icon {
+	width: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: linear-gradient(135deg, #e7f1ff, #d0e8ff);
+	border-radius: 12px;
+	transition: all 0.3s ease;
+	margin: 0 auto;
+}
+
+.feature-icon:hover {
+	transform: scale(1.1) rotate(5deg);
+	box-shadow: 0 10px 25px rgba(13, 110, 253, 0.2);
+}
+
+/* Estilos de card premium */
+.card-premium {
+	border: 1px solid rgba(13, 110, 253, 0.1);
+	background: linear-gradient(135deg, #ffffff 0%, #f8f9ff 100%);
+}
+
+.card-premium:hover {
+	border-color: var(--primary);
+	box-shadow: 0 20px 50px rgba(13, 110, 253, 0.15);
+}
+
+/* Sinais de confiança - Por que confiar na Turistar */
+.trust-icon-circle {
+	width: 32px;
+	min-width: 32px;
+	height: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #198754;
+	color: white;
+}
+
+.trust-icon-circle i {
+	font-size: 0.9rem;
+}
+
+/* Nota: manter CSS pequeno e intencionalmente mínimo para confiar no sistema do Bootstrap */

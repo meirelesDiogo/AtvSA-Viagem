@@ -7,28 +7,342 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <style>body{padding-top:72px}</style>
 </head>
 <body>
-    <div class="container py-5">
-        <h1 class="fw-bold">Contato</h1>
-        <p class="lead">Fale conosco preenchendo o formulário abaixo ou ligue para (11) 99999-9999.</p>
-        <form>
-            <div class="mb-3">
-                <label class="form-label">Nome</label>
-                <input class="form-control" required>
+    <!-- Navbar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <i class="bi bi-globe2 fs-3 me-2"></i>
+                <span class="fw-bold">Turistar<span class="text-warning">.com</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reservar</a></li>
+                </ul>
             </div>
-            <div class="mb-3">
-                <label class="form-label">E-mail</label>
-                <input type="email" class="form-control" required>
+        </div>
+    </nav>
+
+    <!-- fale conosco -->
+    <header class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Fale Conosco</h1>
+                    <p class="lead">Estamos aqui para ajudar você a planejar a viagem dos seus sonhos.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a" class="img-fluid rounded-3 shadow" alt="Contato">
+                </div>
             </div>
-            <div class="mb-3">
-                <label class="form-label">Mensagem</label>
-                <textarea class="form-control" rows="4" required></textarea>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Formulário de Contato  -->
+                
+                <div class="col-lg-12 mb-5">
+                    <div class="contact-form p-4 shadow-sm rounded">
+                        <h2 class="mb-4">Envie sua mensagem</h2>
+                        <form class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Nome completo</label>
+                                    <input type="text" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, insira seu nome.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">E-mail</label>
+                                    <input type="email" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, insira um e-mail válido.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Telefone</label>
+                                    <input type="tel" class="form-control" required>
+                                    <div class="invalid-feedback">
+                                        Por favor, insira seu telefone.
+                                    </div>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label class="form-label">Assunto</label>
+                                    <select class="form-select" required>
+                                        <option value="">Selecione...</option>
+                                        <option>Informações</option>
+                                        <option>Orçamento</option>
+                                        <option>Suporte</option>
+                                        <option>Outro</option>
+                                    </select>
+                                    <div class="invalid-feedback">
+                                        Por favor, selecione um assunto.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label">Mensagem</label>
+                                <textarea class="form-control" rows="5" required></textarea>
+                                <div class="invalid-feedback">
+                                    Por favor, escreva sua mensagem.
+                                </div>
+                            </div>
+                            <div class="mb-3 form-check">
+                                <input type="checkbox" class="form-check-input" required>
+                                <label class="form-check-label">
+                                    Concordo em receber comunicações da Turistar.com
+                                </label>
+                                <div class="invalid-feedback">
+                                    Você precisa concordar antes de enviar.
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            <button class="btn btn-primary">Enviar</button>
-        </form>
-        <a href="../../index.html" class="btn btn-link mt-3">Voltar à página inicial</a>
-    </div>
+
+            <!-- Informações de Contato -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h2 class="mb-5">Informações</h2>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="d-flex">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-geo-alt text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Endereço</h5>
+                            <p class="text-muted mb-0">R. Rio de Janeiro, 471<br>Centro - Belo Horizonte, MG</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="d-flex">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-telephone text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Telefones</h5>
+                            <p class="text-muted mb-0">(11) 3333-4444<br>(11) 99999-8888</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="d-flex">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-envelope text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">E-mail</h5>
+                            <p class="text-muted mb-0">contato@turistar.com<br>suporte@turistar.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-4">
+                    <div class="d-flex">
+                        <div class="feature-icon me-3">
+                            <i class="bi bi-clock text-primary"></i>
+                        </div>
+                        <div>
+                            <h5 class="mb-1">Horário</h5>
+                            <p class="text-muted mb-0">Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h5 class="mb-3">Redes Sociais</h5>
+                    <div>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Filiais -->
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <h5 class="mb-3">Outras Filiais</h5>
+                    <div class="list-group list-group-flush">
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="bi bi-geo-alt me-2"></i>São Paulo - SP
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="bi bi-geo-alt me-2"></i>Rio de Janeiro - RJ
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="bi bi-geo-alt me-2"></i>Salvador - BA
+                        </a>
+                        <a href="#" class="list-group-item list-group-item-action">
+                            <i class="bi bi-geo-alt me-2"></i>Recife - PE
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mapa -->
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h2 class="text-center mb-4">Nossa Localização</h2>
+                    <div class="ratio ratio-21x9">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3750.6647522468635!2d-43.93195!3d-19.926381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa695410f9f9f9f9f%3A0x1234567890abcdef!2sR.%20Rio%20de%20Janeiro%2C%20471%20-%20Centro%2C%20Belo%20Horizonte%20-%20MG!5e0!3m2!1spt-BR!2sbr!4v1635959562000!5m2!1spt-BR!2sbr" class="map-iframe" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Recursos Úteis -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Recursos Úteis</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-passport text-primary" style="font-size: 2.5rem;"></i>
+                            <h5 class="mt-3">Documentos Necessários</h5>
+                            <p class="text-muted small">Visto, passaporte e outras informações importantes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-globe-americas text-info" style="font-size: 2.5rem;"></i>
+                            <h5 class="mt-3">Dicas de Destinos</h5>
+                            <p class="text-muted small">Guias especializados para cada região</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-suitcase text-success" style="font-size: 2.5rem;"></i>
+                            <h5 class="mt-3">Como Empacotar</h5>
+                            <p class="text-muted small">Dicas práticas para viajar com conforto</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="bi bi-camera text-warning" style="font-size: 2.5rem;"></i>
+                            <h5 class="mt-3">Fotos de Clientes</h5>
+                            <p class="text-muted small">Galeria de momentos especiais vividos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Por que nos escolher -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Por Que Confiar na Turistar</h2>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="trust-icon-circle me-3">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>15+ Anos de Experiência</h5>
+                            <p class="text-muted">Atuando no mercado de turismo com excelência</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="trust-icon-circle me-3">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>50.000+ Clientes Satisfeitos</h5>
+                            <p class="text-muted">Viajantes que confiaram e amaram seus pacotes</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="trust-icon-circle me-3">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Atendimento 24/7 Premium</h5>
+                            <p class="text-muted">Suporte em português, antes, durante e após viagem</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="d-flex mb-4">
+                        <div class="flex-shrink-0">
+                            <div class="trust-icon-circle me-3">
+                                <i class="bi bi-check-lg"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h5>Garantia 100% de Segurança</h5>
+                            <p class="text-muted">Parcerias com hotéis e companhias aéreas certificadas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <strong>Turistar.com</strong>
+                    <div class="small">&copy; <span id="year"></span> Turistar. Todos os direitos reservados.</div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>

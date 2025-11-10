@@ -7,33 +7,429 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <style>body{padding-top:72px}</style>
 </head>
 <body>
-    <div class="container py-5">
-        <h1 class="fw-bold">Serviços</h1>
-        <p class="lead">Oferecemos pacotes, passagens, seguro-viagem, roteiros personalizados e suporte 24/7.</p>
-        <div class="row g-3 mt-3">
-            <div class="col-md-4">
-                <div class="p-3 border rounded text-center">
-                    <i class="bi bi-plane-fill fs-2 text-primary"></i>
-                    <h6 class="mt-2">Passagens</h6>
-                </div>
+    <!--  BARRA DE NAVEGAÇÃO-->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+                <i class="bi bi-globe2 fs-3 me-2"></i>
+                <span class="fw-bold">Turistar<span class="text-warning">.com</span></span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navCollapse">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reservar</a></li>
+                </ul>
             </div>
-            <div class="col-md-4">
-                <div class="p-3 border rounded text-center">
-                    <i class="bi bi-hotel fs-2 text-primary"></i>
-                    <h6 class="mt-2">Hotéis</h6>
+        </div>
+    </nav>
+
+    <!-- 
+         Nossos Serviços-->
+    <header class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold">Nossos Serviços</h1>
+                    <p class="lead">Soluções completas para sua viagem dos sonhos.</p>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="p-3 border rounded text-center">
-                    <i class="bi bi-shield-check fs-2 text-primary"></i>
-                    <h6 class="mt-2">Seguro Viagem</h6>
+                <div class="col-lg-6">
+                    <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05" class="img-fluid rounded-3 shadow" alt="Serviços de Viagem">
                 </div>
             </div>
         </div>
-        <a href="../../index.html" class="btn btn-primary mt-4">Voltar à página inicial</a>
-    </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <!-- 
+                 SERVIÇOS PRINCIPAIS-->
+            <section class="mb-5">
+                <h2 class="text-center mb-5">Serviços Principais</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-airplane fs-2 text-primary"></i>
+                                </div>
+                                <h3>Passagens Aéreas</h3>
+                                <p class="text-muted">Melhores preços e rotas otimizadas para seu destino.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Busca de melhores tarifas</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Múltiplas companhias</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Alertas de preços</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-house-door fs-2 text-primary"></i>
+                                </div>
+                                <h3>Hospedagem</h3>
+                                <p class="text-muted">Hotéis, pousadas e resorts selecionados para você.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Avaliações verificadas</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Fotos reais</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Reserva garantida</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 border-0 shadow-sm">
+                            <div class="card-body text-center">
+                                <div class="feature-icon mb-3">
+                                    <i class="bi bi-shield-check fs-2 text-primary"></i>
+                                </div>
+                                <h3>Seguro Viagem</h3>
+                                <p class="text-muted">Proteção completa para sua tranquilidade.</p>
+                                <ul class="list-unstyled">
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cobertura médica</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Assistência 24h</li>
+                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cancelamento grátis</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+                 DESTINOS POR CONTINENTE -->
+            <section class="py-5">
+                <h2 class="text-center mb-5">Destinos por Continente</h2>
+                
+                <!-- Tabs para os continentes -->
+                <ul class="nav nav-pills mb-4 justify-content-center" id="continenteTabs" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" data-bs-toggle="pill" data-bs-target="#america">América</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#europa">Europa</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#asia">Ásia</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#africa">África</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" data-bs-toggle="pill" data-bs-target="#oceania">Oceania</button>
+                    </li>
+                </ul>
+
+                <!-- Conteúdo das tabs -->
+                <div class="tab-content" id="continenteTabsContent">
+                    <!-- América -->
+                    <div class="tab-pane fade show active" id="america">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="../images/mapaAmerica.png" class="img-fluid mb-4" alt="Mapa das Américas">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>América</h3>
+                                <p class="lead">Das geleiras do Alasca às praias do Caribe, descubra a diversidade das Américas.</p>
+                                <div class="accordion" id="americaAccordion">
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#americaNorte">
+                                                América do Norte
+                                            </button>
+                                        </h4>
+                                        <div id="americaNorte" class="accordion-collapse collapse show">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Parques nacionais nos EUA</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ski no Canadá</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Cultura maia no México</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h4 class="accordion-header">
+                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#americaSul">
+                                                América do Sul
+                                            </button>
+                                        </h4>
+                                        <div id="americaSul" class="accordion-collapse collapse">
+                                            <div class="accordion-body">
+                                                <ul class="list-unstyled">
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Machu Picchu no Peru</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Praias brasileiras</li>
+                                                    <li><i class="bi bi-check-circle-fill text-success me-2"></i>Patagônia Argentina</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Europa -->
+                    <div class="tab-pane fade" id="europa">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="../images/mapaeuropa.png" class="img-fluid mb-4" alt="Mapa da Europa">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Europa</h3>
+                                <p class="lead">História milenar, arte, gastronomia e cultura em cada esquina.</p>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        <i class="bi bi-building text-primary me-2"></i>
+                                        <strong>Capitais Históricas:</strong> Paris, Roma, Londres, Madrid
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-snow text-primary me-2"></i>
+                                        <strong>Alpes:</strong> Ski na Suíça, Áustria e França
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-sun text-primary me-2"></i>
+                                        <strong>Mediterrâneo:</strong> Grécia, Croácia, Itália
+                                    </li>
+                                    <li class="list-group-item">
+                                        <i class="bi bi-stars text-primary me-2"></i>
+                                        <strong>Europa Medieval:</strong> Castelos e vilarejos
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ásia -->
+                    <div class="tab-pane fade" id="asia">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="../images/mapaasia.png" class="img-fluid mb-4" alt="Mapa da Ásia">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Ásia</h3>
+                                <p class="lead">Do moderno ao tradicional, experiências únicas no maior continente.</p>
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h5>Extremo Oriente</h5>
+                                                <ul class="list-unstyled">
+                                                    <li>Japão: Tecnologia e tradição</li>
+                                                    <li>China: Grande Muralha</li>
+                                                    <li>Coreia: K-pop e templos</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h5>Sudeste Asiático</h5>
+                                                <ul class="list-unstyled">
+                                                    <li>Tailândia: Praias e templos</li>
+                                                    <li>Vietnã: História e natureza</li>
+                                                    <li>Indonésia: Bali e vulcões</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- África -->
+                    <div class="tab-pane fade" id="africa">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="../images/mapaafrica.png" class="img-fluid mb-4" alt="Mapa da África">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>África</h3>
+                                <p class="lead">Safaris, culturas ancestrais e paisagens deslumbrantes.</p>
+                                <div class="row g-4">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <h5>Principais Experiências</h5>
+                                                <ul class="list-unstyled">
+                                                    <li><i class="bi bi-camera-fill text-success me-2"></i>Safari no Serengeti</li>
+                                                    <li><i class="bi bi-pyramid text-success me-2"></i>Pirâmides do Egito</li>
+                                                    <li><i class="bi bi-water text-success me-2"></i>Praias de Zanzibar</li>
+                                                    <li><i class="bi bi-tree-fill text-success me-2"></i>Gorilas em Ruanda</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oceania -->
+                    <div class="tab-pane fade" id="oceania">
+                        <div class="row align-items-center">
+                            <div class="col-lg-6">
+                                <img src="../images/mapaoceania.png" class="img-fluid mb-4" alt="Mapa da Oceania">
+                            </div>
+                            <div class="col-lg-6">
+                                <h3>Oceania</h3>
+                                <p class="lead">Paraísos naturais, recifes de coral e cultura aborígene.</p>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h5>Destaques</h5>
+                                        <ul class="list-unstyled">
+                                            <li><i class="bi bi-patch-check-fill text-info me-2"></i>Grande Barreira de Coral</li>
+                                            <li><i class="bi bi-building text-info me-2"></i>Sydney e Melbourne</li>
+                                            <li><i class="bi bi-tree-fill text-info me-2"></i>Nova Zelândia: Senhor dos Anéis</li>
+                                            <li><i class="bi bi-flower1 text-info me-2"></i>Ilhas do Pacífico</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 
+                 PLANEJAMENTO PERSONALIZADO
+                  -->
+            <section class="py-5 bg-light rounded-3 p-4">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <h2>Planejamento Personalizado</h2>
+                        <p class="lead">Criamos roteiros exclusivos baseados no seu perfil e preferências.</p>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-check-lg text-primary me-2"></i>Consultoria especializada</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i>Roteiros sob medida</li>
+                            <li><i class="bi bi-check-lg text-primary me-2"></i>Suporte durante toda a viagem</li>
+                        </ul>
+                        <a href="contato.html" class="btn btn-primary">Solicitar Consultoria</a>
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40" class="img-fluid rounded" alt="Consultoria">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- 
+         Perguntas Frequentes  -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5 fw-bold">Perguntas Frequentes</h2>
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Como faço para reservar um pacote?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Você pode reservar através do nosso site, por telefone ou visitando uma de nossas filiais. Temos consultores prontos para ajudar na melhor opção para você.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Qual é a política de cancelamento?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Você pode cancelar com até 30 dias de antecedência com reembolso total. Consulte os termos específicos de cada pacote.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Vocês oferecem parcelamento?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Sim! Oferecemos parcelamento em até 12x sem juros para pacotes acima de R$ 5.000.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    O seguro viagem está incluído?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    O seguro viagem está incluído em nossos pacotes internacionais. Para viagens nacionais, oferecemos como opção adicional.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                                    Como vocês lidam com mudanças de último momento?
+                                </button>
+                            </h2>
+                            <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nossa equipe 24/7 está sempre pronta para ajudar com mudanças de última hora. Temos contatos diretos com hotéis, companhias aéreas e agências locais.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-4">Pronto para Começar sua Aventura?</h2>
+            <p class="lead mb-4">Entre em contato conosco hoje e deixe nossos especialistas ajudarem a planejar a viagem perfeita!</p>
+            <a href="contato.html" class="btn btn-warning btn-lg">Fale Conosco</a>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                    <strong>Turistar.com</strong>
+                    <div class="small">&copy; <span id="year"></span> Turistar. Todos os direitos reservados.</div>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-white me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/script.js"></script>
 </body>
 </html>
