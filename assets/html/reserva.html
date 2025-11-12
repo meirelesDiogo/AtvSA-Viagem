@@ -1,462 +1,264 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Reserva — Turistar.com</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Reserva — Turistar.com</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
-        <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="../../index.html">
-                <i class="bi bi-globe2 fs-3 me-2"></i>
-                <span class="fw-bold">Turistar<span class="text-warning">.com</span></span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navCollapse">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
-                    <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
-                    <li class="nav-item"><a class="nav-link" href="reserva.html">Reservar</a></li>
-                </ul>
-            </div>
+  <!-- Navbar -->
+  <nav id="mainNavbar" class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../../index.html">
+        <i class="bi bi-globe2 fs-3 me-2"></i>
+        <span class="fw-bold">Turistar<span class="text-warning">.com</span></span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navCollapse">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre.html">Sobre</a></li>
+          <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item"><a class="nav-link" href="reserva.html">Reservar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main class="py-5">
+    <div class="container mt-4">
+      <!-- Hero Section -->
+      <div class="bg-light rounded-3 p-5 mb-5">
+        <h1 class="display-5 fw-bold mb-3">Sistema de Reservas</h1>
+        <p class="lead text-muted">Escolha seu destino e customize sua viagem de acordo com suas preferências.</p>
+        <div class="alert alert-info mt-3">
+          <i class="bi bi-info-circle me-2"></i>
+          <strong>Dica:</strong> Verifique nossas promoções especiais ao final desta página!
         </div>
-    </nav>
+      </div>
 
-    <main class="py-5">
-        <div class="container mt-4">
-            <!-- Hero Section -->
-            <div class="bg-light rounded-3 p-5 mb-5">
-                <h1 class="display-5 fw-bold mb-3">Sistema de Reservas</h1>
-                <p class="lead text-muted">Escolha seu destino e customize sua viagem de acordo com suas preferências.</p>
-                <div class="alert alert-info mt-3">
-                    <i class="bi bi-info-circle me-2"></i>
-                    <strong>Dica:</strong> Verifique nossas promoções especiais ao final desta página!
-                </div>
-            </div>
+      <!-- Abas de destinos -->
+      <ul class="nav nav-tabs mb-4" id="destinoTabs" role="tablist">
+        <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#america">América</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#europa">Europa</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#asia">Ásia</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#africa">África</button></li>
+        <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#oceania">Oceania</button></li>
+      </ul>
 
-            <!-- Abas de destinos -->
-            <ul class="nav nav-tabs mb-4" id="destinoTabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#america">América</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#europa">Europa</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#asia">Ásia</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#africa">África</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#oceania">Oceania</button>
-                </li>
-            </ul>
+      <!-- Conteúdo das abas -->
+      <div class="tab-content" id="destinoTabsContent">
 
-            <!-- Conteúdo das abas -->
-            <div class="tab-content" id="destinoTabsContent">
-                <!-- Praias Tropicais -->
-                <div class="tab-pane fade show active" id="praias">
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <h2 class="mb-4">Pacote Praias Tropicais</h2>
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h5 class="mb-0">Voos Disponíveis</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Origem</th>
-                                                    <th>Destino</th>
-                                                    <th>Data</th>
-                                                    <th>Horário</th>
-                                                    <th>Companhia</th>
-                                                    <th>Preço</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- Destinos Populares - América do Norte -->
-                                                <tr class="table-primary">
-                                                    <td colspan="6"><strong>Destinos Populares - América do Norte</strong></td>
-                                                </tr>
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Nova York</td>
-                                                    <td>15/12/2025</td>
-                                                    <td>08:00</td>
-                                                    <td>American Airlines</td>
-                                                    <td>R$ 3.920,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Rio de Janeiro</td>
-                                                    <td>Miami</td>
-                                                    <td>16/12/2025</td>
-                                                    <td>10:30</td>
-                                                    <td>LATAM</td>
-                                                    <td>R$ 3.675,00</td>
-                                                </tr>
-                                                <!-- América do Sul -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Buenos Aires</td>
-                                                    <td>18/12/2025</td>
-                                                    <td>07:15</td>
-                                                    <td>Aerolineas Argentinas</td>
-                                                    <td>R$ 1.470,00</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>Rio de Janeiro</td>
-                                                    <td>Lima</td>
-                                                    <td>20/12/2025</td>
-                                                    <td>09:45</td>
-                                                    <td>LATAM</td>
-                                                    <td>R$ 2.205,00</td>
-                                                </tr>
-                                                <!-- Canadá -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Toronto</td>
-                                                    <td>22/12/2025</td>
-                                                    <td>23:30</td>
-                                                    <td>Air Canada</td>
-                                                    <td>R$ 4.410,00</td>
-                                                </tr>
-                                                <!-- México -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Cidade do México</td>
-                                                    <td>19/12/2025</td>
-                                                    <td>14:20</td>
-                                                    <td>Aeroméxico</td>
-                                                    <td>R$ 2.940,00</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h5 class="mb-0">Detalhes do Pacote</h5>
-                                </div>
-                                <div class="card-body">
-                                    <h6>Inclui:</h6>
-                                    <ul>
-                                        <li>7 noites de hospedagem em resort 5 estrelas all-inclusive</li>
-                                        <li>Voos de ida e volta</li>
-                                        <li>Traslados aeroporto-hotel-aeroporto</li>
-                                        <li>2 passeios de barco</li>
-                                        <li>Seguro viagem internacional</li>
-                                        <li>Assistência 24h</li>
-                                    </ul>
-                                    
-                                    <h6>Programação:</h6>
-                                    <div class="timeline-small">
-                                        <div class="mb-3">
-                                            <strong>Dia 1:</strong> Check-in e welcome drink
-                                        </div>
-                                        <div class="mb-3">
-                                            <strong>Dia 2:</strong> Passeio de barco e snorkeling
-                                        </div>
-                                        <div class="mb-3">
-                                            <strong>Dia 3:</strong> Dia livre com atividades no resort
-                                        </div>
-                                        <div class="mb-3">
-                                            <strong>Dia 4:</strong> Mergulho com instrutor (opcional)
-                                        </div>
-                                        <div class="mb-3">
-                                            <strong>Dia 5:</strong> Passeio às ilhas vizinhas
-                                        </div>
-                                        <div class="mb-3">
-                                            <strong>Dia 6-7:</strong> Dias livres
-                                        </div>
-                                        <div>
-                                            <strong>Dia 8:</strong> Check-out e retorno
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Sidebar com resumo e formulário -->
-                        <div class="col-lg-4">
-                            <div class="card sticky-top reservation-sidebar">
-                                <div class="card-header bg-primary text-white">
-                                    <h5 class="mb-0"><i class="bi bi-calculator me-2"></i>Cálculo de Reserva</h5>
-                                </div>
-                                <div class="card-body">
-                                    <form class="needs-validation" id="reservaForm" novalidate>
-                                        <div class="mb-3">
-                                            <label class="form-label">Data da Viagem</label>
-                                            <input type="date" class="form-control" id="dataViagem" required>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Número de Pessoas</label>
-                                            <select class="form-select" id="numPessoas" required>
-                                                <option value="">Selecione...</option>
-                                                <option value="1">1 pessoa</option>
-                                                <option value="2">2 pessoas</option>
-                                                <option value="3">3 pessoas</option>
-                                                <option value="4">4 pessoas</option>
-                                                <option value="5">5+ pessoas</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Tipo de Quarto</label>
-                                            <select class="form-select" id="tipoQuarto" required>
-                                                <option value="">Selecione...</option>
-                                                <option value="1500">Standard (R$ 1.500/noite)</option>
-                                                <option value="2000">Superior (R$ 2.000/noite)</option>
-                                                <option value="2800">Luxo (R$ 2.800/noite)</option>
-                                                <option value="4000">Suíte (R$ 4.000/noite)</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label class="form-label">Aplicar Promoção</label>
-                                            <select class="form-select" id="promocao" required>
-                                                <option value="0">Sem promoção</option>
-                                                <option value="20">Férias em Família - 20% OFF</option>
-                                                <option value="40">Último Minuto - 40% OFF</option>
-                                                <option value="500">Primeira Viagem - R$ 500 de desconto</option>
-                                            </select>
-                                        </div>
-                                        <hr>
-                                        <div class="mb-3 bg-light p-3 rounded">
-                                            <h6 class="text-primary fw-bold mb-3">Resumo do Cálculo</h6>
-                                            <div class="d-flex justify-content-between mb-2 small">
-                                                <span>Hospedagem (7 noites)</span>
-                                                <span id="hospedagem">R$ 0,00</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-2 small">
-                                                <span>Voo (ida e volta)</span>
-                                                <span id="voo">R$ 3.500,00</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-2 small">
-                                                <span>Seguro viagem</span>
-                                                <span id="seguro">R$ 250,00</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-2 small">
-                                                <span>Traslados e extras</span>
-                                                <span id="extras">R$ 300,00</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-3 small">
-                                                <span id="labelSubtotal">Subtotal</span>
-                                                <span id="subtotal">R$ 0,00</span>
-                                            </div>
-                                            <div class="d-flex justify-content-between mb-3 small text-success fw-bold">
-                                                <span id="labelDesconto">Desconto</span>
-                                                <span id="desconto">- R$ 0,00</span>
-                                            </div>
-                                            <hr class="my-2">
-                                            <div class="d-flex justify-content-between fw-bold text-primary" style="font-size: 1.2rem;">
-                                                <span>Total a Pagar</span>
-                                                <span id="total">R$ 0,00</span>
-                                            </div>
-                                            <div class="mt-3 small text-muted">
-                                                <i class="bi bi-info-circle me-1"></i>
-                                                <span id="parcelamento">Parcelamento disponível em até 12x</span>
-                                            </div>
-                                        </div>
-                                        <button type="submit" class="btn btn-success w-100 btn-lg">
-                                            <i class="bi bi-check-circle me-2"></i>Confirmar Reserva
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Cidades Europeias -->
-                <div class="tab-pane fade" id="europa">
-                    <!-- Conteúdo similar ao das praias, mas para o pacote europeu -->
-                    <div class="row">
-                        <div class="col-lg-8">
-                            <h2 class="mb-4">Pacote Cidades Europeias</h2>
-                            <div class="card mb-4">
-                                <div class="card-header">
-                                    <h5 class="mb-0">Voos Disponíveis</h5>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table class="table">
-                                            <thead>
-                                                <tr>
-                                                    <th>Origem</th>
-                                                    <th>Destino</th>
-                                                    <th>Data</th>
-                                                    <th>Horário</th>
-                                                    <th>Companhia</th>
-                                                    <th>Preço</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <!-- França -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Paris</td>
-                                                    <td>20/12/2025</td>
-                                                    <td>22:00</td>
-                                                    <td>Air France</td>
-                                                    <td>R$ 4.240,00</td>
-                                                </tr>
-                                                <!-- Portugal -->
-                                                <tr>
-                                                    <td>Rio de Janeiro</td>
-                                                    <td>Lisboa</td>
-                                                    <td>21/12/2025</td>
-                                                    <td>23:30</td>
-                                                    <td>TAP</td>
-                                                    <td>R$ 3.975,00</td>
-                                                </tr>
-                                                <!-- Itália -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Roma</td>
-                                                    <td>22/12/2025</td>
-                                                    <td>21:15</td>
-                                                    <td>ITA Airways</td>
-                                                    <td>R$ 4.505,00</td>
-                                                </tr>
-                                                <!-- Espanha -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Madrid</td>
-                                                    <td>23/12/2025</td>
-                                                    <td>19:45</td>
-                                                    <td>Iberia</td>
-                                                    <td>R$ 4.134,00</td>
-                                                </tr>
-                                                <!-- Alemanha -->
-                                                <tr>
-                                                    <td>Rio de Janeiro</td>
-                                                    <td>Frankfurt</td>
-                                                    <td>24/12/2025</td>
-                                                    <td>20:30</td>
-                                                    <td>Lufthansa</td>
-                                                    <td>R$ 4.346,00</td>
-                                                </tr>
-                                                <!-- Reino Unido -->
-                                                <tr>
-                                                    <td>São Paulo</td>
-                                                    <td>Londres</td>
-                                                    <td>25/12/2025</td>
-                                                    <td>22:45</td>
-                                                    <td>British Airways</td>
-                                                    <td>R$ 4.612,50</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Mais detalhes do pacote europeu -->
-                        </div>
-                        <div class="col-lg-4">
-                            <!-- Formulário de reserva similar -->
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Aventura nas Montanhas -->
-                <div class="tab-pane fade" id="montanhas">
-                    <!-- Conteúdo similar aos anteriores, mas para o pacote de montanha -->
-                </div>
-            </div>
+        <!-- AMÉRICA -->
+        <div class="tab-pane fade show active" id="america">
+          <h2 class="mb-4">Destinos na América</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Nova York</td><td>EUA</td><td>15/12/2025</td><td>American Airlines</td><td>R$ 3.920,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Miami</td><td>EUA</td><td>16/12/2025</td><td>LATAM</td><td>R$ 3.675,00</td></tr>
+                <tr><td>São Paulo</td><td>Buenos Aires</td><td>Argentina</td><td>18/12/2025</td><td>Aerolineas Argentinas</td><td>R$ 1.470,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Lima</td><td>Peru</td><td>20/12/2025</td><td>LATAM</td><td>R$ 2.205,00</td></tr>
+                <tr><td>São Paulo</td><td>Toronto</td><td>Canadá</td><td>22/12/2025</td><td>Air Canada</td><td>R$ 4.410,00</td></tr>
+                <tr><td>São Paulo</td><td>Cidade do México</td><td>México</td><td>19/12/2025</td><td>Aeroméxico</td><td>R$ 2.940,00</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        <!-- Seção de Promoções -->
-        <div class="container mt-5">
-            <h2 class="text-center mb-5 fw-bold">Promoções Especiais</h2>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="card h-100 border-success">
-                        <div class="card-header bg-success text-white">
-                            <h5 class="mb-0">Férias em Família</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Pacotes com desconto de até 20% para famílias com 4+ pessoas</p>
-                            <p class="text-success fw-bold">Válido até 31/12/2025</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-info">
-                        <div class="card-header bg-info text-white">
-                            <h5 class="mb-0">Último Minuto</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Liquidação de pacotes com saída em até 15 dias - até 40% OFF</p>
-                            <p class="text-info fw-bold">Ofertas limitadas!</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card h-100 border-warning">
-                        <div class="card-header bg-warning text-dark">
-                            <h5 class="mb-0">Primeira Viagem</h5>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-text">Desconto de R$ 500 para clientes novos em qualquer pacote</p>
-                            <p class="text-warning fw-bold">Válido para primeira compra</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <!-- EUROPA -->
+        <div class="tab-pane fade" id="europa">
+          <h2 class="mb-4">Destinos na Europa</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Paris</td><td>França</td><td>20/12/2025</td><td>Air France</td><td>R$ 4.240,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Lisboa</td><td>Portugal</td><td>21/12/2025</td><td>TAP</td><td>R$ 3.975,00</td></tr>
+                <tr><td>São Paulo</td><td>Roma</td><td>Itália</td><td>22/12/2025</td><td>ITA Airways</td><td>R$ 4.505,00</td></tr>
+                <tr><td>São Paulo</td><td>Madrid</td><td>Espanha</td><td>23/12/2025</td><td>Iberia</td><td>R$ 4.134,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Frankfurt</td><td>Alemanha</td><td>24/12/2025</td><td>Lufthansa</td><td>R$ 4.346,00</td></tr>
+                <tr><td>São Paulo</td><td>Londres</td><td>Reino Unido</td><td>25/12/2025</td><td>British Airways</td><td>R$ 4.612,50</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
-        <!-- Passo a Passo da Reserva -->
-        <div class="container mt-5">
-            <h2 class="text-center mb-5 fw-bold">Passo a Passo da Reserva</h2>
-            <div class="row">
-                <div class="col-md-3 text-center mb-4">
-                    <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
-                        <i class="bi bi-search"></i>
-                    </div>
-                    <h5>1. Escolha</h5>
-                    <p class="text-muted small">Selecione seu destino e datas</p>
-                </div>
-                <div class="col-md-3 text-center mb-4">
-                    <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
-                        <i class="bi bi-credit-card"></i>
-                    </div>
-                    <h5>2. Pagamento</h5>
-                    <p class="text-muted small">Pagamento seguro e parcelado</p>
-                </div>
-                <div class="col-md-3 text-center mb-4">
-                    <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
-                        <i class="bi bi-check-circle"></i>
-                    </div>
-                    <h5>3. Confirmação</h5>
-                    <p class="text-muted small">Receba sua reserva confirmada</p>
-                </div>
-                <div class="col-md-3 text-center mb-4">
-                    <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width: 80px; height: 80px; font-size: 2rem;">
-                        <i class="bi bi-airplane"></i>
-                    </div>
-                    <h5>4. Viagem</h5>
-                    <p class="text-muted small">Aproveite sua experiência!</p>
-                </div>
-            </div>
+        <!-- ÁSIA -->
+        <div class="tab-pane fade" id="asia">
+          <h2 class="mb-4">Destinos na Ásia</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Tóquio</td><td>Japão</td><td>20/12/2025</td><td>ANA</td><td>R$ 7.200,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Bangkok</td><td>Tailândia</td><td>22/12/2025</td><td>Thai Airways</td><td>R$ 6.850,00</td></tr>
+                <tr><td>São Paulo</td><td>Dubai</td><td>Emirados Árabes</td><td>24/12/2025</td><td>Emirates</td><td>R$ 5.950,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Pequim</td><td>China</td><td>26/12/2025</td><td>Air China</td><td>R$ 6.300,00</td></tr>
+                <tr><td>São Paulo</td><td>Seul</td><td>Coreia do Sul</td><td>27/12/2025</td><td>Korean Air</td><td>R$ 6.700,00</td></tr>
+              </tbody>
+            </table>
+          </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+        <!-- ÁFRICA -->
+        <div class="tab-pane fade" id="africa">
+          <h2 class="mb-4">Destinos na África</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Cidade do Cabo</td><td>África do Sul</td><td>20/12/2025</td><td>South African Airways</td><td>R$ 4.900,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Cairo</td><td>Egito</td><td>22/12/2025</td><td>EgyptAir</td><td>R$ 4.600,00</td></tr>
+                <tr><td>São Paulo</td><td>Nairóbi</td><td>Quênia</td><td>24/12/2025</td><td>Kenya Airways</td><td>R$ 5.200,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Casablanca</td><td>Marrocos</td><td>26/12/2025</td><td>Royal Air Maroc</td><td>R$ 4.850,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- OCEANIA -->
+        <div class="tab-pane fade" id="oceania">
+          <h2 class="mb-4">Destinos na Oceania</h2>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead class="table-primary">
+                <tr>
+                  <th>Origem</th>
+                  <th>Destino</th>
+                  <th>País</th>
+                  <th>Data</th>
+                  <th>Companhia</th>
+                  <th>Preço</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>São Paulo</td><td>Sydney</td><td>Austrália</td><td>20/12/2025</td><td>Qantas</td><td>R$ 7.800,00</td></tr>
+                <tr><td>Rio de Janeiro</td><td>Auckland</td><td>Nova Zelândia</td><td>22/12/2025</td><td>Air New Zealand</td><td>R$ 7.350,00</td></tr>
+                <tr><td>São Paulo</td><td>Melbourne</td><td>Austrália</td><td>24/12/2025</td><td>LATAM</td><td>R$ 7.650,00</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Seção de Promoções -->
+    <div class="container mt-5">
+      <h2 class="text-center mb-5 fw-bold">Promoções Especiais</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-success">
+            <div class="card-header bg-success text-white"><h5 class="mb-0">Férias em Família</h5></div>
+            <div class="card-body">
+              <p class="card-text">Pacotes com desconto de até 20% para famílias com 4+ pessoas</p>
+              <p class="text-success fw-bold">Válido até 31/12/2025</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-info">
+            <div class="card-header bg-info text-white"><h5 class="mb-0">Último Minuto</h5></div>
+            <div class="card-body">
+              <p class="card-text">Liquidação de pacotes com saída em até 15 dias - até 40% OFF</p>
+              <p class="text-info fw-bold">Ofertas limitadas!</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-warning">
+            <div class="card-header bg-warning text-dark"><h5 class="mb-0">Primeira Viagem</h5></div>
+            <div class="card-body">
+              <p class="card-text">Desconto de R$ 500 para clientes novos em qualquer pacote</p>
+              <p class="text-warning fw-bold">Válido para primeira compra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Passo a Passo da Reserva -->
+    <div class="container mt-5 mb-5">
+      <h2 class="text-center mb-5 fw-bold">Passo a Passo da Reserva</h2>
+      <div class="row text-center">
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-search"></i>
+          </div>
+          <h5>1. Escolha</h5>
+          <p class="text-muted small">Selecione seu destino e datas</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-credit-card"></i>
+          </div>
+          <h5>2. Pagamento</h5>
+          <p class="text-muted small">Pagamento seguro e parcelado</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-check-circle"></i>
+          </div>
+          <h5>3. Confirmação</h5>
+          <p class="text-muted small">Receba sua reserva confirmada</p>
+        </div>
+        <div class="col-md-3 mb-4">
+          <div class="rounded-circle bg-primary text-white mx-auto mb-3 d-flex align-items-center justify-content-center" style="width:80px;height:80px;font-size:2rem;">
+            <i class="bi bi-airplane"></i>
+          </div>
+          <h5>4. Viagem</h5>
+          <p class="text-muted small">Aproveite sua experiência!</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
@@ -472,9 +274,7 @@
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="../js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/script.js"></script>
 </body>
 </html>
