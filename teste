@@ -1,0 +1,275 @@
+Algoritmo "MaoNaRoda"
+// Disciplina: Linguagem e Lógica de Programação
+// Sistema de compra e aluguel de veículos
+
+Var
+   nome, qualquerTecla, car, mot: caractere
+   idade, opt, opt1, opt2, opt3, opt4, opt5, opt6, opt7, cnh, dias, parcelas, acesso, madru, madru1: inteiro
+   carro: vetor [1..10] de caractere
+   moto: vetor [1..10] de caractere
+   preco: vetor [1..10] de real
+   precoC: vetor [1..10] de real
+   valor, juros, total, valorAPagar: real
+   i, y: inteiro
+
+Inicio
+
+// Cadastro de motos ---------------------------
+
+moto[1] <- "Honda Pop 110i (2025) - categoria C"
+preco[1] <- 10990
+moto[2] <- "Yamaha Factor 150 (2025) - categoria B"
+preco[2] <- 8990
+moto[3] <- "Shineray Jet 125 EFI / Free 150 EFI (2025) - categoria B"
+preco[3] <- 10990
+moto[4] <- "Honda Biz 125 (2025) - categoria C"
+preco[4] <- 13990
+moto[5] <- "Shineray Worker 125 (2025) - categoria C"
+preco[5] <- 9990
+moto[6] <- "Honda PCX 160 (2025) - categoria A"
+preco[6] <- 19890
+moto[7] <- "Honda CB 300F Twister (2025) - categoria A"
+preco[7] <- 21890
+moto[8] <- "Mottu Sport 110i (2025) - categoria B"
+preco[8] <- 8990
+moto[9] <- "Honda CG 160 (2025) - categoria A"
+preco[9] <- 14890
+moto[10] <- "Tiger Sport 800 - categoria A"
+preco[10] <- 27890
+
+// Cadastro de carros    ---------------------------
+
+
+carro[1] <- "Toyota Corolla (2015) - categoria B"
+precoC[1] <- 69690
+carro[2] <- "Chevrolet Montana (2025) - categoria B"
+precoC[2] <- 138290
+carro[3] <- "Fiat Uno Attractive 1.0 (2021) - categoria C"
+precoC[3] <- 47337
+carro[4] <- "Honda HR-V (2016) - categoria C"
+precoC[4] <- 80560
+carro[5] <- "Jeep Compass (2025) - categoria C"
+precoC[5] <- 234384
+carro[6] <- "Citroën C3 1.0 Live MT - categoria A"
+precoC[6] <- 76890
+carro[7] <- "Range Rover Velar (2018) - categoria A"
+precoC[7] <- 513900
+carro[8] <- "Volkswagen - categoria B"
+precoC[8] <- 88990
+carro[9] <- "Ford - categoria B"
+precoC[9] <- 79900
+carro[10] <- "Land Rover Velar - categoria A"
+precoC[10] <- 550000
+
+// Tela de Boas-vindas ------------------------------------------
+
+Escreval("__________________________ MÃO NA RODA ___________________________")
+Escreval("")
+Escreval("======================= SEJA BEM-VINDO ===========================")
+Escreval("")
+
+   Escreval("                ******     ")
+   Escreval("             **        **  ")
+   Escreval("~           *   ******   * ")
+   Escreval("  ~~       *   *      *   *")
+   Escreval("   ~~      *   *  OO  *   *")
+   Escreval("       ~~  *   *      *   *")
+   Escreval(" ___________*   ******   *______________________________________ ")
+   Escreval("             **        **  ")
+   Escreval("                ******     ")
+   Escreval("---    -----    -----    -----    -----    -----    -----   --")
+   Escreval("________________________________________________________________")
+   Escreval ("")
+Escreval("Pressione ENTER para continuar...")
+Leia(qualquerTecla)
+LimpaTela
+
+// Dados do cliente
+Escreval("Informe seu nome:")
+Leia(nome)
+Escreval("Informe sua idade:")
+Leia(idade)
+Escreval("Informe a categoria da sua CNH: 1) A (Moto)  2) B (Carro)")
+Leia(cnh)
+LimpaTela
+
+// MENU PRINCIPAL   -----------------------------------
+
+enquanto opt <> 5 faca
+   Escreval("========= MENU PRINCIPAL =========")
+   Escreval("1. Veículos disponíveis")
+   Escreval("2. Comprar")
+   Escreval("3. Alugar")
+   Escreval("4. Dúvidas Frequentes")
+   Escreval("5. Sair do Sistema")
+   Escreval("Escolha uma opção:")
+   Leia(opt)
+   LimpaTela
+
+   escolha opt
+
+   // VEÍCULOS DISPONÍVEIS --------------------------------
+   
+   caso 1
+      se cnh = 1 entao
+         Escreval("MOTOS DISPONÍVEIS:")
+         para y de 1 ate 10 faca
+            Escreval(y, " - ", moto[y], " | R$ ", preco[y]:2:2)
+         fimpara
+      senao
+         Escreval("CARROS DISPONÍVEIS:")
+         para i de 1 ate 10 faca
+            Escreval(i, " - ", carro[i], " | R$ ", precoC[i]:2:2)
+         fimpara
+      fimse
+
+   // COMPRA --------------------------------------------------
+   
+   caso 2
+      se idade < 18 entao
+         Escreval("Usuário menor de idade. Não pode comprar veículos.")
+      senao
+         se cnh = 1 entao
+            Escreval("Escolha a moto que deseja comprar:")
+            para y de 1 ate 10 faca
+               Escreval(y, " - ", moto[y], " | R$ ", preco[y]:2:2)
+            fimpara
+            leia(opt1)
+            valor <- preco[opt1]
+            escreval("Você escolheu: ", moto[opt1])
+         senao
+            Escreval("Escolha o carro que deseja comprar:")
+            para i de 1 ate 10 faca
+               Escreval(i, " - ", carro[i], " | R$ ", precoC[i]:2:2)
+            fimpara
+            leia(opt1)
+            valor <- precoC[opt1]
+            escreval("Você escolheu: ", carro[opt1])
+         fimse
+
+         Escreval("Deseja ver opções de pagamento? (1-SIM / 2-NÃO)")
+         Leia(acesso)
+
+         se acesso = 1 entao
+            Escreval("1 - À vista (10% de desconto)")
+            Escreval("2 - Parcelado em até 12x (1.5% de juros ao mês)")
+            Leia(parcelas)
+
+            se parcelas = 1 entao
+               total <- valor * 0.90
+            senao
+               Escreval("Em quantas parcelas (2 a 12)?")
+               Leia(parcelas)
+               juros <- 0.015 * parcelas
+               total <- valor * (1 + juros)
+            fimse
+
+            Escreval("Valor total: R$ ", total:2:2)
+            Escreval("Valor por parcela: R$ ", total / parcelas:2:2)
+         fimse
+
+         Escreval("Deseja agendar atendimento? (1-SIM / 2-NÃO)")
+         Leia(opt2)
+
+         se opt2 = 1 entao
+            Escreval("Tipo de agendamento: 1-Online | 2-Presencial")
+            Leia(madru)
+            se madru = 1 entao
+               Escreval("Whatsapp: (31) 99246-5813")
+            senao
+               Escreval("Endereço 1: Av Professor Magalhães Penido, 269 - Pampulha")
+               escreval (" Hórario de funcionamento -> 7h30 a 19h segunda - sexta ")
+               
+               Escreval("Endereço 2: Av João César de Oliveira, 881 - Eldorado")
+               escreval (" Hórario de funcionamento -> 8h a 19h segunda - sexta")
+               
+               Escreval("Endereço 3: Av Olinto Meireles, 440 - Barreiro")
+                escreval (" Hórario de funcionamento -> 9h30 a 19h segunda - sexta")
+            fimse
+         fimse
+      fimse
+
+   // ALUGUEL -------------------------------------------------------------
+   
+   caso 3
+      se idade < 18 entao
+      escreval ( "                        ATENÇÃO                                ")
+      Escreval("________________________________________________________________")
+         Escreval("=== Usuário menor de idade. Não pode alugar veículos !!. ")
+      senao
+         se cnh = 1 entao
+            Escreval("- > Escolha a moto:")
+            para y de 1 ate 10 faca
+               Escreval(y, " - ", moto[y])
+            fimpara
+            leia(opt3)
+            escreval("Por quantos dias deseja alugar?")
+            leia(dias)
+            valorAPagar <- dias * 120 // valor base
+            escreval("Valor a pagar: R$ ", valorAPagar:2:2)
+         senao
+            Escreval("-> Escolha o carro:")
+            para i de 1 ate 10 faca
+               Escreval(i, " - ", carro[i])
+            fimpara
+            leia(opt3)
+            escreval("-> Por quantos dias deseja alugar?")
+            leia(dias)
+            valorAPagar <- dias * 300 // valor base
+            escreval("Valor a pagar: R$ ", valorAPagar:2:2)
+         fimse
+      fimse
+
+   // DÚVIDAS --------------------------------------------
+   
+   caso 4
+      escreval ("------ Duvidas Referentes a : ------")
+      Escreval("1. Dúvidas sobre aluguel")
+      Escreval("2. Dúvidas sobre compra")
+      leia(opt4)
+
+      escolha opt4
+         caso 1
+         escreval (" ========= DUVIDAS FREQUENTES  ========")
+
+            Escreval("- CNH válida, cartão de crédito e documento com foto.")
+            Escreval("- Caução bloqueado no cartão.")
+            Escreval("- Em caso de pane, acione assistência.")
+            escreval("-Quais documentos são necessários para alugar um carro?")
+            Escreval(" CNH válida (Carteira Nacional de Habilitação, com pelo menos 2 anos em algumas locadoras)")
+            Escreval(" -Cartão de crédito no nome do locatário?")
+            escreval(" Documento com foto (RG ou CNH)")
+            ESCREVAL("")
+            escreval("-É necessário ter cartão de crédito?")
+            escreval( "Sim, é necessário um cartão de crédito no nome do titular para bloquear o valor da caução (depósito de segurança).")
+            escreval("")
+            escreval("-O que é caução (ou pré-autorização)?")
+            escreval(" É um valor bloqueado no cartão de crédito como garantia. Ele não é cobrado, apenas fica indisponível durante o período do aluguel e é liberado após a devolução.")
+            escreval("")
+            escreval("-O que está incluído no valor do aluguel?")
+            escreval(" Quilometragem livre ou limitada")
+            escreval(" -Seguro básico (contra terceiros ou com franquia?)")
+            escreval(" Assistência 24h Mas combustível, pedágios, multas e seguro completo são à parte.")
+            escreval("")
+            escreval("-Posso dirigir em outros estados ou cidades?")
+            escreval(" Sim.Contanto que não saia do país.")
+         caso 2
+          ESCREVAL  ("Documentações exigidas:========")
+            Escreval("- RG, CPF, comprovante de residência e CRV.")
+            escreval (" Exigencia :==========
+            Escreval("- Transferência deve ser feita em até 30 dias.")
+      fimescolha
+
+   fimescolha
+fimEnquanto
+
+Escreval("Sistema finalizado ! .  Obrigado(a) por utilizar o Mão na Roda!")
+Escreval("      ______")
+Escreval(" ____/[][][][]\\____")
+Escreval("|_   Volte sempre! _|")
+Escreval("  O             O")
+Escreval("Agradecemos Pela preferencia ")
+escreval ( " Dayane , Amanda , Leticia G , Kelly e Natalia ")
+
+
+Fimalgoritmo
